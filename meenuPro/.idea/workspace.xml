@@ -23,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="79" selection-start="533" selection-end="533" vertical-scroll-proportion="0.4857143" vertical-offset="0" max-vertical-offset="901">
+            <state line="9" column="42" selection-start="200" selection-end="200" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="697">
               <folding />
             </state>
           </provider>
@@ -35,7 +35,7 @@
       <file leaf-file-name="loginCtrl.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/component/controllers/loginCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="31" selection-start="210" selection-end="210" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+            <state line="32" column="41" selection-start="1202" selection-end="1202" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="748">
               <folding />
             </state>
           </provider>
@@ -44,16 +44,47 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="7" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+            <state line="11" column="7" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1496">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config.js">
+      <file leaf-file-name="excelCtrl.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/component/controllers/excelCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="119">
+            <state line="13" column="13" selection-start="455" selection-end="455" vertical-scroll-proportion="0.20128824" vertical-offset="96" max-vertical-offset="1666">
+              <folding>
+                <element signature="e#3255#3294#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="excel.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/component/view/excel.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="20" selection-start="48" selection-end="48" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="136">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="17" selection-start="250" selection-end="266" vertical-scroll-proportion="0.0" vertical-offset="8" max-vertical-offset="4641">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/component/view/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="0" selection-start="685" selection-end="685" vertical-scroll-proportion="-15.038462" vertical-offset="0" max-vertical-offset="493">
               <folding />
             </state>
           </provider>
@@ -80,8 +111,10 @@
       <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shared/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="119">
-              <folding />
+            <state line="5" column="75" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+              <folding>
+                <element signature="e#0#39#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -100,9 +133,13 @@
         <option value="$PROJECT_DIR$/component/tableApp.js" />
         <option value="$PROJECT_DIR$/shared/directives.js" />
         <option value="$PROJECT_DIR$/shared/main.js" />
-        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/component/view/login.html" />
         <option value="$PROJECT_DIR$/component/controllers/loginCtrl.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/component/view/excel.html" />
+        <option value="$PROJECT_DIR$/component/controllers/excelCtrl.js" />
       </list>
     </option>
   </component>
@@ -180,7 +217,39 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meenuPro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meenuPro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="component" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meenuPro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meenuPro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="component" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -216,6 +285,7 @@
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="recentsLimit" value="5" />
     <property name="LayoutCode.rearrangeEntriesHTML" value="false" />
+    <property name="LayoutCode.rearrangeEntriesJavaScript" value="false" />
   </component>
   <component name="RunManager" selected="JavaScript Debug.index.html">
     <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true" temporary="true" uri="http://localhost:63342/meenuPro/index.html">
@@ -340,29 +410,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/shared/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="621">
-          <folding />
+        <state line="5" column="75" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$PROJECT_DIR$/component/view/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="7" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+        <state line="23" column="0" selection-start="685" selection-end="685" vertical-scroll-proportion="-15.038462" vertical-offset="0" max-vertical-offset="493">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/component/controllers/loginCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="31" selection-start="210" selection-end="210" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+        <state line="32" column="41" selection-start="1202" selection-end="1202" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="748">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="7" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1496">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="17" selection-start="250" selection-end="266" vertical-scroll-proportion="0.0" vertical-offset="8" max-vertical-offset="4641">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="79" selection-start="533" selection-end="533" vertical-scroll-proportion="0.4857143" vertical-offset="0" max-vertical-offset="901">
+        <state line="9" column="42" selection-start="200" selection-end="200" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="697">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/view/excel.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="20" selection-start="48" selection-end="48" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="136">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/controllers/excelCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="455" selection-end="455" vertical-scroll-proportion="0.20128824" vertical-offset="96" max-vertical-offset="1666">
+          <folding>
+            <element signature="e#3255#3294#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

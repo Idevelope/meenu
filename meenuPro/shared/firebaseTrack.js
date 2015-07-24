@@ -2,12 +2,12 @@
  * Created by s.priy on 7/24/2015.
  */
 app.factory('trackNodesFactory',[
-    'guestFactory',
+    'projectFactory',
 
-    function(guestFactory){
+    function(projectFactory){
 
         var init = function(){
-            guestFactory.trackGuestNode();
+            projectFactory.trackGuestNode();
 
         };
         return init;

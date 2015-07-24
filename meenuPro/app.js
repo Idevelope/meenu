@@ -4,15 +4,16 @@
 
 var app = angular.module('app', [
         'ngRoute',
-        'ngTouch',
+        //'ngTouch',
+        'firebase',
         'ui.grid',
         'ui.grid.edit',
         'ui.grid.rowEdit',
         'ui.grid.cellNav',
-        'ui.grid.resizeColumns',
-        'ui.grid.selection',
-        'ui.grid.exporter',
-        'ui.grid.importer'
+        //'ui.grid.resizeColumns',
+        //'ui.grid.selection',
+        //'ui.grid.exporter',
+        //'ui.grid.importer'
     ]);
 
 app.config(['$routeProvider',
@@ -55,6 +56,13 @@ app.config(['$routeProvider',
 //    })
 //    .otherwise({ redirectTo: '/' });
 //}]);
+
+app.factory("Auth", ["$firebaseAuth",
+    function($firebaseAuth) {
+        var ref = new Firebase("https://simpleex.firebaseio.com");
+        return $firebaseAuth(ref);
+    }
+]);
 //
 //var checkRouting= function ($q, $rootScope, $location) {
 //    if ($rootScope.userProfile) {

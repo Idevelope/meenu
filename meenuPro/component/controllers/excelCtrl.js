@@ -4,13 +4,25 @@
 app.controller('ExcelController', [
     '$scope',
     function($scope) {
+
+
         $scope.gridOptions = {
             enableSorting: true,
+            enableCellSelection: true,
+            enableCellEditOnFocus: true,
+            onRegisterApi: function (gridApi) {
+                $scope.gridApi = gridApi;
+                gridApi.edit.on.afterCellEdit($scope, function (rowEntity, colDef, newValue, oldValue) {
+                    $scope.$apply();
+                    alert(rowEntity);
+                    //console.log(rowEntity "+" colDef "+" newValue "+" oldValue );
+                });
+            },
             columnDefs: [
                 { name:'firstName', field: 'firstName' },
                 { name:'1stFriend', field: 'lastName' },
-                { name:'city', field: 'company'},
-                { name:'getZip', field: 'employed', enableCellEdit:false}
+                { name:'company', field: 'company'},
+                { name:'employed', field: 'employed', enableCellEdit:false}
             ]
 //            enableGridMenu: true,
 //            enableSelectAll: true,
@@ -55,12 +67,12 @@ app.controller('ExcelController', [
             }
         ];
 
-//        $scope.gridOptions.rowIdentity = function(row) {
-//            alert(row.id);
-//        };
-//        $scope.gridOptions.getRowIdentity = function(row) {
-//            alert(row.id + "1");
-//        };
+        //$scope.gridOptions.rowIdentity = function(row) {
+        //    alert(row.id);
+        //};
+        //$scope.gridOptions.getRowIdentity = function(row) {
+        //    alert(row.id + "1");
+        //};
 
 
 //
@@ -89,6 +101,7 @@ app.controller('ExcelController', [
 //                "employed": false
 //            }
 //        ];
-    }]);/**
+    }]);
+/**
  * Created by sheel on 17/7/15.
  */

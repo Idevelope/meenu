@@ -2,8 +2,8 @@
     <div class="container" ng-controller="LoginController">
         <h1>Welcome</h1>
 
-        <form class="form" ng-submit="submit(login)">
-            <input type="text" placeholder="Username" required="required" ng-model="login.username">
+        <form class="login-form" ng-submit="submit(login)">
+            <input  type="text" placeholder="Username" required="required" ng-model="login.username">
             <input type="password" placeholder="Password" required="required" ng-model="login.password">
             <button type="submit" id="login-button" ng-click="submit(login)">Login</button>
         </form>

@@ -92,12 +92,12 @@ body :-ms-input-placeholder {
           transition-timing-function: ease-in-put;
   font-weight: 200;
 }
-form {
+.login-form  {
   padding: 20px 0;
   position: relative;
   z-index: 2;
 }
-form input {
+.login-form input {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -111,20 +111,20 @@ form input {
   display: block;
   text-align: center;
   font-size: 18px;
-  color: white;
+  color: black;
   -webkit-transition-duration: 0.25s;
           transition-duration: 0.25s;
   font-weight: 300;
 }
-form input:hover {
+.login-form  input:hover {
   background-color: rgba(255, 255, 255, 0.4);
 }
-form input:focus {
+.login-form  input:focus {
   background-color: white;
   width: 300px;
   color: #53e3a6;
 }
-form button {
+.login-form  button {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -237,6 +237,9 @@ form button:hover {
 .myGrid {
     width: 500px;
     height: 250px;
+}
+.grid{
+    font-size: 14px;
 }
 .ui-grid{
     color:#2c2c2c;

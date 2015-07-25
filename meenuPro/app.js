@@ -30,10 +30,12 @@ app.config(['$routeProvider',
             otherwise({
                 redirectTo: '/login'
             });
-    }]);
-//    .run( function($rootScope, $location) {
-//
-//        // register listener to watch route changes
+    }])
+    .run( function($rootScope, $location,main, projectFactory, trackNodesFactory) {
+        main.projects=[];
+        projectFactory.init();
+        trackNodesFactory();
+        // register listener to watch route changes
 //        $rootScope.$on( "$routeChangeStart", function(event, next, current) {
 //            if ( $rootScope.loggedUser == null ) {
 //                // no logged user, we should be going to #login
@@ -45,7 +47,7 @@ app.config(['$routeProvider',
 //                }
 //            }
 //        });
-//    });
+    });
 
 //    .when('/private/anotherpage', {
 //        templateUrl:"another-private.html",

@@ -6,15 +6,16 @@ app.controller('ExcelController', [
     '$firebaseObject',
     'trackNodesFactory',
     'projectFactory',
-    function($scope,$firebaseObject, trackNodesFactory, projectFactory) {
+    'main',
+    function($scope,$firebaseObject, trackNodesFactory, projectFactory,main) {
         var ref = new Firebase("https://simpleex.firebaseio.com/data");
         // download the data into a local object
         var syncObject = $firebaseObject(ref);
         // synchronize the object with a three-way data binding
         // click on `index.html` above to see it used in the DOM!
         syncObject.$bindTo($scope, "data");
-        projectFactory.init();
-        trackNodesFactory();
+//        projectFactory.init();
+//        trackNodesFactory();
         projectFactory.addGuest(uniqueId(), {name:"sheel", lastname:"gautam"});
         $scope.gridOptions = {
             enableSorting: true,
@@ -58,26 +59,8 @@ app.controller('ExcelController', [
 
         };
         $scope.gridOptions.enableCellEditOnFocus = true;
-        $scope.gridOptions.data = [
-            {
-                "firstName": "Cox",
-                "lastName": "Carney",
-                "company": "Enormo",
-                "employed": true
-            },
-            {
-                "firstName": "Lorraine",
-                "lastName": "Wise",
-                "company": "Comveyer",
-                "employed": false
-            },
-            {
-                "firstName": "Nancy",
-                "lastName": "Waters",
-                "company": "Fuelton",
-                "employed": false
-            }
-        ];
+        $scope.projectList = main.projects;
+        $scope.gridOptions.data =$scope.projectList;
 
         $scope.addData = function() {
             var n = $scope.gridOptions.data.length + 1;

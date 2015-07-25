@@ -2,8 +2,8 @@
  * Created by s.priy on 7/24/2015.
  */
 app.factory('projectFactory', [
-
-    function(){
+    'main',
+    function(main){
         var rootNode = 'https://simpleex.firebaseio.com/';
         var locallyAddedObjects = {};
         var onCompletion = function(error){
@@ -35,6 +35,7 @@ app.factory('projectFactory', [
         var guestExecution = function(snapshot) {
             var guest = snapshot.val();
            // var guestResponse = sqLiteModel.guestValidator(guest);
+            main.projects.push(guest);
             console.log("child_added/updated-guest" + JSON.stringify(guest));
         };
 
